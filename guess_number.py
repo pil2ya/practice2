@@ -1,0 +1,17 @@
+import random
+
+answer = random.randint(1, 100)
+
+print("숫자 맞추기 게임")
+print("1~100 사이 숫자를 맞혀보세요.")
+
+while True:
+    guess = int(input("숫자 입력: "))
+
+    if guess < answer:
+        print("더 큰 숫자입니다.")
+    elif guess > answer:
+        print("더 작은 숫자입니다.")
+    else:
+        print("정답입니다!")
+        break
